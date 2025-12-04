@@ -81,6 +81,42 @@ Payload visible in search bar
 🧠 Learning Outcome
 
 I understood how user input, when not properly sanitized, can execute malicious JavaScript inside a website and affect users.
+🔐 Task 3 – Broken Authentication (Admin Login Bypass)
+🎯 Objective
+
+To exploit a weak authentication mechanism and log in as admin without knowing the password.
+
+🧪 Steps Performed
+
+Opened Login page in OWASP Juice Shop.
+
+Entered the following SQL Injection payload in the email field:
+
+' OR 1=1--
+
+
+Typed any value in the password field (e.g., 123).
+
+Clicked Log in.
+
+The login system executed the injected SQL query and authenticated me as admin.
+
+✅ Result
+
+Successfully logged in as admin@juice-sh.op
+.
+
+Full admin account access obtained without a password.
+
+This confirms the application is vulnerable to SQL Injection authentication bypass.
+
+📸 Proof
+
+Screenshot showing admin logged in.
+
+🧠 Learning Outcome
+
+I learned how insecure SQL queries allow attackers to bypass login checks and gain unauthorized access.
 
 ✔ Intern: Dora
   
