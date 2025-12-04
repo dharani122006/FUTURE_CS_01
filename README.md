@@ -46,19 +46,41 @@ SQL Injection login attempt
 
 Successful login using SQLi
 
-✔ Status
+🛡️ Task 2 – Cross-Site Scripting (XSS Attack)
+🎯 Objective
 
-Task 1 – In Progress
+To identify and exploit a stored XSS vulnerability in OWASP Juice Shop.
 
- SQL Injection
+🧪 Steps Performed
 
- XSS
+Logged in to OWASP Juice Shop.
 
- Authentication Bypass
+Navigated to the Search bar.
 
- Report Creation
+Injected the following payload:
 
- LinkedIn Post
+"><svg/onload=alert('Dora')>
+
+
+Pressed Enter.
+
+The browser executed the JavaScript payload.
+
+✅ Result
+
+A popup alert box displayed the message “Dora”, confirming that the website is vulnerable to Stored XSS.
+
+📸 Proof
+
+Screenshots attached in repository:
+
+Popup alert screenshot
+
+Payload visible in search bar
+
+🧠 Learning Outcome
+
+I understood how user input, when not properly sanitized, can execute malicious JavaScript inside a website and affect users.
 
 ✔ Intern: Dora
   
