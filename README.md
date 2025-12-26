@@ -118,5 +118,5 @@ Screenshot showing admin logged in.
 
 I learned how insecure SQL queries allow attackers to bypass login checks and gain unauthorized access.
 
-✔ Intern: Dora
+✔ Intern: Dharani R
   
